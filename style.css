@@ -169,7 +169,7 @@ header .connect a:hover {
 
 .Home .image {
   flex: 1 0 35rem;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
 }
 
 .Home .image img {
@@ -181,7 +181,7 @@ header .connect a:hover {
 
 .Home .content {
   flex: 1 1 40rem;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
 }
 
 .Home .content .hi {
@@ -509,6 +509,10 @@ header .connect a:hover {
     border: none;
     left: -160%;
   }
+  section {
+    min-height: 90vh;
+    padding: 1rem 2%;
+  }
   .active {
     left: 0;
   }
@@ -516,43 +520,64 @@ header .connect a:hover {
   .cursor1 {
     display: none;
   }
-
-  .image {
-    width: 450px;
-    height: 90%;
+  .Home {
+    margin-top: 2rem;
   }
+  .Home .content {
+    flex: 1 1 50rem;
+    /* border: 2px solid blue; */
+  }
+  .image {
+    width: 400px;
+    height: 40%;
+  }
+
+  .About .part1 .image {
+    flex: 1 1 40rem;
+  }
+
+  .About .part1 .content {
+    flex: 1 1 50rem;
+  }
+
+  .About .part1 .content .containerBox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    flex: 1 1 50rem;
+    justify-content: space-between;
+    padding: 0.7rem 0;
+  }
+
   .About .part1 .image img {
     width: 100%;
-    height: 100%;
+    height: 50%;
     margin: 10px auto;
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
-  }
-}
-
-@media (width: 820px) {
-  section {
-    min-height: 50vh;
-    padding: 1rem 5%;
   }
 }
 
 @media (max-width: 701px) {
   .Home {
     min-height: 85vh;
-    padding: 3rem 2%;
+    padding: 1rem 2%;
   }
   .image {
-    width: 150px;
-    height: 70%;
+    width: 450px;
+    height: 100%;
   }
   .Home .image img {
     margin-top: 30px;
-    width: 70%;
-    height: 75%;
+    width: 65%;
+    height: 85%;
+  }
+
+  .About .part1 .image {
+    flex: 1 1 35rem;
   }
   .About .part1 .image img {
-    width: 70%;
-    height: 70%;
+    width: 90%;
+    height: 80%;
     margin: 10px auto;
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
   }
@@ -625,6 +650,9 @@ header .connect a:hover {
 }
 
 @media (max-width: 340px) {
+  .Home {
+    margin-top: 0rem;
+  }
   section {
     min-height: 100vh;
     padding: 1rem 5%;
