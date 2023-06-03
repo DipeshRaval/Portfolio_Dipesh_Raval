@@ -7,13 +7,12 @@
     <title>Portfolio | DjRaval</title>
     <link rel="icon" href="coder.png" />
     <link rel="stylesheet" href="style.css" />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-
     <script src="script.js" defer></script>
+    <script></script>
   </head>
   <body>
     <div class="cursor1"></div>
@@ -32,10 +31,16 @@
       </nav>
 
       <div class="connect">
-        <a href="#" class="fab fa-facebook-f"></a>
-        <a href="#" class="fab fa-twitter"></a>
-        <a href="#" class="fab fa-linkedin"></a>
-        <a href="#" class="fab fa-instagram"></a>
+        <a href="https://github.com/DipeshRaval" class="fab fa-github"></a>
+        <a href="https://twitter.com/drvl_07" class="fab fa-twitter"></a>
+        <a
+          href="https://www.linkedin.com/in/dipesh-raval-0a9000215/"
+          class="fab fa-linkedin"
+        ></a>
+        <a
+          href="https://www.instagram.com/dipu_raval_07/"
+          class="fab fa-instagram"
+        ></a>
       </div>
     </header>
 
@@ -90,8 +95,13 @@
               <p><span> Country : </span> india</p>
             </div>
             <div class="box-btn">
-              <a href="Home" class="btn">Download CV</a>
-              <a href="#" class="btn">Hire Me</a>
+              <a
+                href="https://drive.google.com/file/d/16JDUfTuuOoarjIBaTPc5munPggV7NueW/view?usp=drive_link"
+                class="btn"
+                target="_blank"
+                >Download CV</a
+              >
+              <a href="#Contect" class="btn">Hire Me</a>
             </div>
           </div>
         </div>
@@ -102,7 +112,7 @@
       <div class="part2">
         <div class="skills">
           <div class="progress">
-            <h3>web design <span> 95% </span></h3>
+            <h3>web design <span> 60% </span></h3>
             <div class="bar"><span></span></div>
           </div>
           <div class="progress">
@@ -110,11 +120,11 @@
             <div class="bar"><span></span></div>
           </div>
           <div class="progress">
-            <h3>JavaScript Devlopment <span> 75% </span></h3>
+            <h3>JavaScript Devlopment <span> 85% </span></h3>
             <div class="bar"><span></span></div>
           </div>
           <div class="progress">
-            <h3>seo marketing <span> 85% </span></h3>
+            <h3>Node js and Raact Js <span> 73% </span></h3>
             <div class="bar"><span></span></div>
           </div>
         </div>
@@ -196,36 +206,64 @@
           <i class="fas fa-phone"></i>
           <h3>my number</h3>
           <p>+91 76218 14119</p>
-          <p>+91 97234 84546</p>
         </div>
 
         <div class="icons">
           <i class="fas fa-map-marker-alt"></i>
           <h3>my address</h3>
-          <p>Vadnager, Mahesana, Gujrat, India - 384355</p>
+          <p>Shahpur (Vad), Vadnager, Mahesana, Gujrat, India - 384355</p>
         </div>
       </div>
 
       <div class="row">
-        <form action="">
-          <input type="text" placeholder="name" class="box" />
-          <input type="email" placeholder="email" class="box" />
-          <input type="number" placeholder="number" class="box" />
+        <form action="" id="myForm">
+          <input
+            id="fname"
+            type="text"
+            placeholder="name"
+            name="full_name"
+            class="box"
+            required
+          />
+          <input
+            id="emailId"
+            type="email"
+            placeholder="email"
+            name="email"
+            class="box"
+            required
+          />
+          <input
+            id="mobaile"
+            type="number"
+            placeholder="number"
+            name="mobaile"
+            class="box"
+            required
+            minlength="10"
+            maxlength="10"
+          />
 
           <textarea
-            name=""
+            name="message"
+            id="message"
             placeholder="message"
-            id=""
             cols="30"
+            class="box"
             rows="10"
+            required
           ></textarea>
 
-          <input type="submit" class="btn Sub_btn" value="send message" />
+          <input
+            type="submit"
+            onclick="SubForm()"
+            class="btn Sub_btn"
+            value="send message"
+          />
         </form>
-
         <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29199.99235992648!2d72.70407653476563!3d23.818633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1685682615531!5m2!1sen!2sin"
           class="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30153.788252261566!2d72.82321484621745!3d19.141690214227783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1625069635379!5m2!1sen!2sin"
           allowfullscreen=""
           loading="lazy"
         ></iframe>

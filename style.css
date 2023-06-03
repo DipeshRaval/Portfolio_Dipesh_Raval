@@ -1,5 +1,6 @@
 :root {
-  --main-color: #d42a5d;
+  /* --main-color: #d42a5d; */
+  --main-color: #da587f;
 }
 
 * {
@@ -55,7 +56,7 @@ section {
 
 .btn:hover {
   letter-spacing: 0.2rem;
-  background-color: #111;
+  background-color: #c10ea0;
 }
 
 header {
@@ -63,7 +64,7 @@ header {
   top: 0;
   bottom: 0;
   left: 0;
-  background-color: #222;
+  background-color: #222222;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -308,7 +309,7 @@ header .connect a:hover {
 }
 
 .About .part2 .skills .progress:nth-child(1) .bar span {
-  width: 95%;
+  width: 60%;
 }
 
 .About .part2 .skills .progress:nth-child(2) .bar span {
@@ -316,11 +317,11 @@ header .connect a:hover {
 }
 
 .About .part2 .skills .progress:nth-child(3) .bar span {
-  width: 75%;
+  width: 85%;
 }
 
 .About .part2 .skills .progress:nth-child(4) .bar span {
-  width: 85%;
+  width: 73%;
 }
 
 .service .box-container {
@@ -592,6 +593,9 @@ header .connect a:hover {
 }
 
 @media (max-width: 501px) {
+  section {
+    padding: 1rem 5%;
+  }
   .Home {
     min-height: 90vh;
     padding: 1rem 5%;
@@ -635,7 +639,7 @@ header .connect a:hover {
     font-size: 1.7rem;
   }
   .btn {
-    font-size: 1.7rem;
+    font-size: 2rem;
     padding: 5px 20px;
   }
   .head {
@@ -655,7 +659,7 @@ header .connect a:hover {
   }
   section {
     min-height: 100vh;
-    padding: 1rem 5%;
+    /* padding: 1rem 5%; */
   }
   .Home .image {
     flex: 1 0 20rem;
@@ -725,5 +729,8 @@ header .connect a:hover {
   }
   .About .part1 {
     padding-top: 0rem;
+  }
+  header {
+    width: 100vw;
   }
 }
