@@ -12,7 +12,8 @@
   border: none;
   transition: all 0.2s linear;
   line-height: 1.5;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 html {
@@ -55,8 +56,8 @@ section {
 }
 
 .btn:hover {
-  letter-spacing: 0.2rem;
-  background-color: #c10ea0;
+  letter-spacing: 0.15rem;
+  background-color: #111;
 }
 
 header {
@@ -326,14 +327,16 @@ header .connect a:hover {
 
 .service .box-container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1.3rem;
 }
 
 .service .box-container .box {
-  flex: 1 1 30rem;
-  text-align: center;
-  padding: 2rem;
+  flex: 1 1 25rem;
+  max-width: 500px;
+  text-align: left;
+  padding: 1.5rem;
   background: #fff;
   border-radius: 0.8rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
@@ -343,25 +346,31 @@ header .connect a:hover {
   border: 0.2rem solid var(--main-color);
 }
 
-.service .box-container .box i {
-  height: 6rem;
-  width: 6rem;
-  line-height: 6rem;
-  font-size: 2.5rem;
-  color: #fff;
-  background: var(--main-color);
-  border-radius: 50%;
-}
-
 .service .box-container .box h3 {
-  color: #444;
-  font-size: 2.2rem;
+  color: #323131;
+  text-align: center;
+  font-size: 2rem;
   padding-top: 1rem;
 }
 
+.img-project {
+  border: 2px solid #da5886;
+  width: 350px;
+  height: 180px;
+  margin: auto;
+  display: block;
+  border-radius: 20px;
+  box-shadow: 4px 3px 10px rgba(30, 28, 31, 0.4);
+}
+
+.lable {
+  color: var(--main-color);
+  font-weight: 600;
+}
+
 .service .box-container .box p {
-  color: #666;
-  font-size: 1.7rem;
+  color: #3c3b3b;
+  font-size: 1.5rem;
   padding-top: 0.5rem;
 }
 
@@ -386,7 +395,7 @@ header .connect a:hover {
 }
 
 .contact .icons-container .icons:hover {
-  border: 0.2rem solid var(--main-color);
+  border: 2px solid var(--main-color);
 }
 
 .contact .icons-container .icons i {
@@ -404,6 +413,7 @@ header .connect a:hover {
   font-size: 2rem;
   padding: 0.5rem 0;
   padding-top: 1rem;
+  text-transform: capitalize;
 }
 
 .contact .icons-container .icons p {
@@ -650,6 +660,13 @@ header .connect a:hover {
     align-items: center;
     flex-wrap: wrap;
     gap: 0rem;
+  }
+  .img-project {
+    width: 300px;
+    height: 200px;
+  }
+  .service .box-container .box {
+    padding: 1rem;
   }
 }
 
