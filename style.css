@@ -330,6 +330,7 @@ header .connect a:hover {
   justify-content: center;
   flex-wrap: wrap;
   gap: 1.3rem;
+  margin-bottom: 10px;
 }
 
 .service .box-container .box {
@@ -587,8 +588,8 @@ header .connect a:hover {
     flex: 1 1 35rem;
   }
   .About .part1 .image img {
-    width: 90%;
-    height: 80%;
+    width: 70%;
+    height: 70%;
     margin: 10px auto;
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
   }
@@ -749,5 +750,12 @@ header .connect a:hover {
   }
   header {
     width: 100vw;
+  }
+  .img-project {
+    width: 240px;
+    height: 150px;
+  }
+  .service .box-container .box {
+    padding: 0.7rem;
   }
 }
